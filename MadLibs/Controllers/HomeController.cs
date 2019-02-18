@@ -22,31 +22,34 @@ namespace MadLibs.Controllers
       myZooVariable.SetAdverb2(adverb2);
       return View(myZooVariable);
     }
-    [Route("/toy")]
-//    public ActionResult Toy(string picture1, string exclamation1, string sound1, string adjective1, string noun1, string month1, string sound2, string adjective2, string noun2, string verb1, string verb2, string drink1, string number1, string color1, string color2, string number2, string noun3, string noun4)
-    public ActionResult Toy(string exclamation1)
+
+    [Route("/toy_story")]
+   public ActionResult ToyStory(string picture1, string exclamation1, string sound1, string adjective1, string noun1, string month1, string sound2, string adjective2, string noun2, string verb1, string verb2, string drink1, string number1, string color1, string color2, string number2, string noun3, string noun4)
+    // public ActionResult ToyStory()
     {
       ToyVariable myToyVariable = new ToyVariable();
-      // myToyVariable.SetPicture1(picture1);
+      myToyVariable.SetPicture1(picture1);
       myToyVariable.SetExclamation1(exclamation1);
-      // myToyVariable.SetSound1(sound1);
-      // myToyVariable.SetAdjective1(adjective1);
-      // myToyVariable.SetNoun1(noun1);
-      // myToyVariable.SetMonth1(month1);
-      // myToyVariable.SetSound2(sound2);
-      // myToyVariable.SetAdjective2(adjective2);
-      // myToyVariable.SetNoun2(noun2);
-      // myToyVariable.SetVerb1(verb1);
-      // myToyVariable.SetVerb2(verb2);
-      // myToyVariable.SetDrink1(drink1);
-      // myToyVariable.SetNumber1(number1);
-      // myToyVariable.SetColor1(color1);
-      // myToyVariable.SetColor2(color2);
-      // myToyVariable.SetNumber2(number2);
-      // myToyVariable.SetNoun3(noun3);
-      // myToyVariable.SetNoun4(noun4);
+      myToyVariable.SetSound1(sound1);
+      myToyVariable.SetAdjective1(adjective1);
+      myToyVariable.SetNoun1(noun1);
+      myToyVariable.SetMonth1(month1);
+      myToyVariable.SetSound2(sound2);
+      myToyVariable.SetAdjective2(adjective2);
+      myToyVariable.SetNoun2(noun2);
+      myToyVariable.SetVerb1(verb1);
+      myToyVariable.SetVerb2(verb2);
+      myToyVariable.SetDrink1(drink1);
+      myToyVariable.SetNumber1(number1);
+      myToyVariable.SetColor1(color1);
+      myToyVariable.SetColor2(color2);
+      myToyVariable.SetNumber2(number2);
+      myToyVariable.SetNoun3(noun3);
+      myToyVariable.SetNoun4(noun4);
       return View(myToyVariable);
     }
+    // [Route("/toy_story")]
+    // public ActionResult ToyStory() { return View(); }
 
     [Route("/zoo_form")]
     public ActionResult ZooForm() { return View(); }
